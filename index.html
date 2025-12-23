@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Git & GitHub Cheat Sheet</title>
+
+    <!-- Linked stylesheet (absolute file URI to the path you provided) -->
+    <link rel="stylesheet" href="file:///C:/Users/User/OneDrive/Desktop/GitHub/LocalRepo/styles.css" />
+    <!-- If you prefer a relative link (recommended when HTML and CSS are in same folder):
+             <link rel="stylesheet" href="styles.css" />
+    -->
+</head>
+<body>
+    <header>
+        <h1>Git & GitHub Cheat Sheet</h1>
+        <p>Sections grouped by learning stage: Beginner → Intermediate → Advanced</p>
+        <nav>
+            <a href="#git-beginner">Git - Beginner</a> |
+            <a href="#git-intermediate">Git - Intermediate</a> |
+            <a href="#git-advanced">Git - Advanced</a> |
+            <a href="#github-beginner">GitHub - Beginner</a> |
+            <a href="#github-intermediate">GitHub - Intermediate</a> |
+            <a href="#github-advanced">GitHub - Advanced</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="git-beginner">
+            <h2>Git — Beginner</h2>
+            <ul>
+                <li><code>git init</code> — create a new repository</li>
+                <li><code>git clone &lt;repo-url&gt;</code> — clone a remote repo</li>
+                <li><code>git status</code> — show working tree status</li>
+                <li><code>git add &lt;file&gt;</code> — stage changes</li>
+                <li><code>git add .</code> — stage all changes</li>
+                <li><code>git commit -m "msg"</code> — commit staged changes</li>
+                <li><code>git log</code> — show commit history</li>
+                <li><code>git diff</code> — show unstaged changes</li>
+            </ul>
+        </section>
+
+        <section id="git-intermediate">
+            <h2>Git — Intermediate</h2>
+            <ul>
+                <li><code>git branch</code> — list branches</li>
+                <li><code>git branch &lt;name&gt;</code> — create branch</li>
+                <li><code>git checkout &lt;branch&gt;</code> — switch branch</li>
+                <li><code>git checkout -b &lt;branch&gt;</code> — create &amp; switch</li>
+                <li><code>git merge &lt;branch&gt;</code> — merge branch into current</li>
+                <li><code>git rebase &lt;base&gt;</code> — reapply commits on new base</li>
+                <li><code>git stash</code> — stash changes</li>
+                <li><code>git stash pop</code> — reapply stashed changes</li>
+                <li><code>git remote -v</code> — show remotes</li>
+                <li><code>git fetch</code> — fetch remote refs</li>
+                <li><code>git pull</code> — fetch + merge (or use <code>--rebase</code>)</li>
+                <li><code>git push</code> — push commits to remote</li>
+            </ul>
+        </section>
+
+        <section id="git-advanced">
+            <h2>Git — Advanced</h2>
+            <ul>
+                <li><code>git reset --soft &lt;commit&gt;</code> — move HEAD, keep index</li>
+                <li><code>git reset --mixed &lt;commit&gt;</code> — default, reset index</li>
+                <li><code>git reset --hard &lt;commit&gt;</code> — reset working tree (destructive)</li>
+                <li><code>git revert &lt;commit&gt;</code> — create a new commit that undoes</li>
+                <li><code>git cherry-pick &lt;commit&gt;</code> — apply a commit onto current branch</li>
+                <li><code>git reflog</code> — recover lost commits / view HEAD history</li>
+                <li><code>git bisect</code> — binary search for a bad commit</li>
+                <li><code>git blame &lt;file&gt;</code> — show who changed each line</li>
+                <li><code>git submodule add &lt;url&gt; &lt;path&gt;</code> — add a submodule</li>
+            </ul>
+        </section>
+
+        <section id="github-beginner">
+            <h2>GitHub — Beginner</h2>
+            <ul>
+                <li>Create a repo on GitHub web UI</li>
+                <li>Connect local repo: <code>git remote add origin &lt;repo-url&gt;</code></li>
+                <li>Push initial branch: <code>git push -u origin main</code></li>
+                <li>Open issues to track bugs/features</li>
+                <li>Use Pull Requests (PRs) to propose changes</li>
+            </ul>
+        </section>
+
+        <section id="github-intermediate">
+            <h2>GitHub — Intermediate</h2>
+            <ul>
+                <li>Fork a repo to contribute to someone else's project</li>
+                <li>Use <code>git fetch upstream</code> and <code>git merge</code> to sync forks</li>
+                <li>Protect branches via repository settings (required checks, reviews)</li>
+                <li>Use PR templates and issue templates</li>
+                <li>Use labels, milestones, and projects to organize work</li>
+                <li>Use Actions marketplace for CI workflows</li>
+            </ul>
+        </section>
+
+        <section id="github-advanced">
+            <h2>GitHub — Advanced</h2>
+            <ul>
+                <li>Write GitHub Actions workflows (.github/workflows/*.yml)</li>
+                <li>Use secrets to store tokens (<code>GITHUB_TOKEN</code> or custom)</li>
+                <li>Configure CODEOWNERS to require specific reviewers</li>
+                <li>Use monorepo strategies and submodules/subtrees</li>
+                <li>Use the GitHub API or gh CLI for automation (<code>gh</code>)</li>
+                <li>Manage large files with Git LFS</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Cheat sheet reset. Stylesheet linked to: C:\Users\User\OneDrive\Desktop\GitHub\LocalRepo\styles.css</p>
+    </footer>
+</body>
+</html>
